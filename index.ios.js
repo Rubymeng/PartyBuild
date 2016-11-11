@@ -13,7 +13,7 @@ import {
   Image,
   View,
   TextInput,
-  ToastAndroid,
+  AlertIOS,
   ScrollView,
 } from 'react-native';
 
@@ -63,7 +63,7 @@ export default class PartyBuild extends Component {
       </Text>
       <Text style={styles.instructions}
       onPress={() => {
-        ToastAndroid.show('点击了更多按钮', ToastAndroid.SHORT);}}>
+        AlertIOS.alert('点击加载更多')}}>
         更多>
       </Text>
     </View>
@@ -104,7 +104,8 @@ export default class PartyBuild extends Component {
       </Text>
       <Text style={styles.instructions}
       onPress={() => {
-        ToastAndroid.show('点击了更多按钮', ToastAndroid.SHORT);}}>
+
+         AlertIOS.alert('点击了更多按钮',)}}>
         更多>
       </Text>
     </View>
